@@ -15,12 +15,14 @@ import io.milvus.param.collection.HasCollectionParam;
 import io.milvus.param.collection.LoadCollectionParam;
 import io.milvus.param.index.CreateIndexParam;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
 
 @Configuration
+@ConditionalOnProperty(name = "milvus.enabled", havingValue = "true")
 public class MilvusConfig {
 
     @Value("${milvus.host}")

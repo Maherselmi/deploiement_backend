@@ -2,9 +2,10 @@ package tn.esprit.insureflow_back.infrastructure.config;
 
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.embedding.EmbeddingModel;
-import dev.langchain4j.model.ollama.OllamaEmbeddingModel;
 import dev.langchain4j.model.openai.OpenAiChatModel;
+import dev.langchain4j.model.openai.OpenAiEmbeddingModel;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -31,10 +32,10 @@ public class OllamaConfig {
     @Value("${openrouter.vision-max-tokens}")
     private Integer visionMaxTokens;
 
-    @Value("${ollama.base-url}")
+    @Value("${ollama.base-url:http://localhost:11434}")
     private String ollamaBaseUrl;
 
-    @Value("${ollama.embedding-model}")
+    @Value("${ollama.embedding-model:nomic-embed-text}")
     private String embeddingModelName;
 
     @Bean(name = "chatLanguageModel")
@@ -50,8 +51,9 @@ public class OllamaConfig {
     }
 
     @Bean(name = "embeddingModel")
+    @ConditionalOnProperty(name = "milvus.enabled", havingValue = "true")
     public EmbeddingModel embeddingModel() {
-        return OllamaEmbeddingModel.builder()
+        return dev.langchain4j.model.ollama.OllamaEmbeddingModel.builder()
                 .baseUrl(ollamaBaseUrl)
                 .modelName(embeddingModelName)
                 .build();
