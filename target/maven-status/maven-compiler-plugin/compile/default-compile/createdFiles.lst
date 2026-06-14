@@ -44,6 +44,7 @@ tn\esprit\insureflow_back\infrastructure\adapter\out\persistence\adapter\AiAgent
 tn\esprit\insureflow_back\infrastructure\adapter\in\web\AiAgentConfigController.class
 tn\esprit\insureflow_back\infrastructure\adapter\out\ml\CostPredictionProperties.class
 tn\esprit\insureflow_back\domain\model\ContratVectorFile$ContratVectorFileBuilder.class
+tn\esprit\insureflow_back\infrastructure\config\CorsConfig.class
 tn\esprit\insureflow_back\domain\model\Policy.class
 tn\esprit\insureflow_back\application\service\ClaimPdfExtractorApplicationService.class
 tn\esprit\insureflow_back\domain\model\AgentResult$AgentResultBuilder.class
@@ -56,6 +57,7 @@ tn\esprit\insureflow_back\domain\port\in\ExpertFeedbackUseCase.class
 tn\esprit\insureflow_back\infrastructure\adapter\out\persistence\adapter\ClientRepositoryAdapter.class
 tn\esprit\insureflow_back\infrastructure\adapter\in\web\AuthController.class
 tn\esprit\insureflow_back\application\service\CostPredictionMlService.class
+tn\esprit\insureflow_back\infrastructure\config\CorsConfig$1.class
 tn\esprit\insureflow_back\domain\port\in\ClaimDocumentUseCase.class
 tn\esprit\insureflow_back\infrastructure\adapter\out\ai\AgentValidateur$ValidationParsed.class
 tn\esprit\insureflow_back\domain\port\in\HumanValidationUseCase.class

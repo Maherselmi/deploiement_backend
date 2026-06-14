@@ -123,6 +123,7 @@ C:\cptr_pfe\InsurFlow_backend-main\InsurFlow_backend-main\src\main\java\tn\espri
 C:\cptr_pfe\InsurFlow_backend-main\InsurFlow_backend-main\src\main\java\tn\esprit\insureflow_back\infrastructure\config\AiAgentConfigInitializer.java
 C:\cptr_pfe\InsurFlow_backend-main\InsurFlow_backend-main\src\main\java\tn\esprit\insureflow_back\infrastructure\config\AssistantConfig.java
 C:\cptr_pfe\InsurFlow_backend-main\InsurFlow_backend-main\src\main\java\tn\esprit\insureflow_back\infrastructure\config\AsyncConfig.java
+C:\cptr_pfe\InsurFlow_backend-main\InsurFlow_backend-main\src\main\java\tn\esprit\insureflow_back\infrastructure\config\CorsConfig.java
 C:\cptr_pfe\InsurFlow_backend-main\InsurFlow_backend-main\src\main\java\tn\esprit\insureflow_back\infrastructure\config\MilvusConfig.java
 C:\cptr_pfe\InsurFlow_backend-main\InsurFlow_backend-main\src\main\java\tn\esprit\insureflow_back\infrastructure\config\OllamaConfig.java
 C:\cptr_pfe\InsurFlow_backend-main\InsurFlow_backend-main\src\main\java\tn\esprit\insureflow_back\infrastructure\config\OllamaWarmup.java
