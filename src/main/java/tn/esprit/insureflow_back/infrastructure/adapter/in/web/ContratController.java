@@ -17,8 +17,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/contrats")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
-public class ContratController {
+@CrossOrigin(origins = {
+        "http://localhost:4200",
+        "https://deploimentfront.vercel.app"
+})public class ContratController {
 
     private final PdfProcessingApplicationService pdfProcessingService;
     private final ContratVectorApplicationService contratVectorService;

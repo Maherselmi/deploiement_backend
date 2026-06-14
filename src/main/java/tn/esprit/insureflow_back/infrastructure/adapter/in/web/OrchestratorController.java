@@ -13,8 +13,10 @@ import tn.esprit.insureflow_back.infrastructure.adapter.out.persistence.reposito
 @Slf4j
 @RestController
 @RequestMapping("/api/orchestrator")
-@CrossOrigin(origins = "http://localhost:4200")
-@RequiredArgsConstructor
+@CrossOrigin(origins = {
+        "http://localhost:4200",
+        "https://deploimentfront.vercel.app"
+})@RequiredArgsConstructor
 public class OrchestratorController {
 
     private final AgentRouteur    agentRouteur;

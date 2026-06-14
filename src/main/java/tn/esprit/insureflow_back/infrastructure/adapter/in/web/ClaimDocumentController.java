@@ -10,8 +10,10 @@ import tn.esprit.insureflow_back.domain.model.Claim;
 import tn.esprit.insureflow_back.domain.model.ClaimDocument;
 import tn.esprit.insureflow_back.domain.port.out.ClaimRepositoryPort;
 
-@CrossOrigin(origins = "http://localhost:4200")
-@RestController
+@CrossOrigin(origins = {
+        "http://localhost:4200",
+        "https://deploimentfront.vercel.app"
+})@RestController
 @RequestMapping("/api/documents")
 @RequiredArgsConstructor
 public class ClaimDocumentController {

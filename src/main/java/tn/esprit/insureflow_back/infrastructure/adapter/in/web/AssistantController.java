@@ -14,8 +14,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/assistant")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
-public class AssistantController {
+@CrossOrigin(origins = {
+        "http://localhost:4200",
+        "https://deploimentfront.vercel.app"
+})public class AssistantController {
 
     private final AssistantApplicationService assistantService;
 
