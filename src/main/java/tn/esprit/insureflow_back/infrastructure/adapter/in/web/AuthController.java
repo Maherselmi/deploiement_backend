@@ -11,10 +11,7 @@ import tn.esprit.insureflow_back.application.service.AuthApplicationService;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = {
-        "http://localhost:4200",
-        "https://deploimentfront.vercel.app"
-})public class AuthController {
+public class AuthController {
 
     private final AuthApplicationService authService;
 

@@ -11,10 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/admin/ai-config")
-@CrossOrigin(origins = {
-        "http://localhost:4200",
-        "https://deploimentfront.vercel.app"
-})@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class AiAgentConfigController {
 
     private final AiAgentConfigApplicationService service;

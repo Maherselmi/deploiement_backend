@@ -10,10 +10,7 @@ import tn.esprit.insureflow_back.domain.port.in.HumanValidationUseCase;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = {
-        "http://localhost:4200",
-        "https://deploimentfront.vercel.app"
-})@RestController
+@RestController
 @RequestMapping("/api/claims")
 @RequiredArgsConstructor
 public class ClaimController {

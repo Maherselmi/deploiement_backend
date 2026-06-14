@@ -8,10 +8,7 @@ import tn.esprit.insureflow_back.domain.port.in.ClientUseCase;
 
 import java.util.List;
 
-@CrossOrigin(origins = {
-        "http://localhost:4200",
-        "https://deploimentfront.vercel.app"
-})@RestController
+@RestController
 @RequestMapping("/api/clients")
 @RequiredArgsConstructor
 public class ClientController {

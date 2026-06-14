@@ -11,10 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/policies")
 @RequiredArgsConstructor
-@CrossOrigin(origins = {
-        "http://localhost:4200",
-        "https://deploimentfront.vercel.app"
-})public class PolicyController {
+public class PolicyController {
 
     private final PolicyApplicationService policyService;
 
